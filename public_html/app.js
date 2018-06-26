@@ -1,0 +1,1 @@
+$("img") .hide() .delay(100) .fadeIn(2000);

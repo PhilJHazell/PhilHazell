@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE STARTS */
+
+#header{
+
+		background: #1a1a1a url(images/bg.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#trump{
+
+	background-color: #ce1940;
+}
+
+#headhigh{
+
+	background: #0b0b0b url(images/headhighbg.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+/* FLEX */
+
+#header, #trump, nav, #name, #scroll, #headhigh{
+
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+#header, #name, #scroll, #text{
+
+		-webkit-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+
+
+}
+
+nav, #trump, #headhigh{
+
+-webkit-flex-direction: row;
+ 	flex-direction: row;
+ 	
+
+}
+
+#trump{
+	-webkit-flex-direction: row;
+ 	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+#headhigh{
+	-webkit-flex-direction: row-reverse;
+ 	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+
+nav{
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Heights & Widths///Sizing */
+
+#header{
+
+height:100%;
+height:100vh;
+
+}
+
+nav{
+	height:10%;
+}
+
+#name{
+height:70%;
+}
+
+#scroll{
+height:20%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#text{
+
+	max-width: 700px;
+}
+
+#trumpimage{
+
+	max-width: 500px;
+}
+
+
+#headhighimage{
+
+	max-width: 300px;
+}
+
+
+#trump, #headhigh{
+	height: 100vh;
+}
+
+
+/* Font Styles */
+
+h1, h3{
+
+	font-family: 'Playfair Display', serif;
+	color: white;
+
+}
+h2, #navleft, #navright{
+
+	font-family: Montserrat, sans-serif;
+	font-weight:300;
+	color:white;
+	text-transform: uppercase;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	font-size: 0.95em;
+	line-height: 1.4em;
+}
+
+h1{
+
+	font-size: 4.8em;
+}
+
+h2{
+
+	font-size: 0.95em;
+	letter-spacing: 0.45em;
+}
+
+h3{
+
+	font-size: 2.8em;
+	line-height: 1.2em;
+}
+
+#trumplink{
+
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #0a0a0a;
+	font-size: 0.8em;
+	line-height: 1.4em;
+	letter-spacing: 0.6em;
+	padding:10px 20px;
+	background-color: white;
+	border:2px white;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+#navleft, #navright{
+
+	font-size: 0.85em;
+	letter-spacing: 0.2em;
+}
+
+a{
+
+	text-decoration: none;
+}
+
+/*Positioning*/
+
+#subheading{
+
+	margin-top: 20px;
+}
+
+#navleft{
+
+	margin-left:2%;
+
+}
+
+#navright{
+
+	margin-right: 2%;
+	
+}
+
+#arrow{
+
+	margin-top: 24px;
+}
+
+#trumptext{
+
+	margin:45px 0px 70px 0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1230px) {
+
+	#text{
+
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width:880px) {
+
+	#trumpimage, #headhighimage{
+
+		display: none;
+	}
+
+	#trump{
+		background: #ce1940 url(images/trumpbg.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h3{
+	font-size: 2em;
+}
+
+#trumptext{
+
+	margin:15px 0px 25px 0px;
+}
+
+#text{
+
+	max-width: 500px;
+}
+}
+
+@media screen and (max-width:680px) {
+
+	#text{
+
+	max-width: 450px;
+}
+
+}
+
+@media screen and (max-width:540px) {
+
+	#text{
+
+	max-width: 400px;
+}
+
+}
+
+
+
+@media screen and (max-width:480px) {
+
+	#text{
+
+		max-width: 300px;
+	}
+
+	h1{
+
+		font-size: 3.8em;
+	}
+}

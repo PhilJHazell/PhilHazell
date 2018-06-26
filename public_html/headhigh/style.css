@@ -1,0 +1,725 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE STARTS */
+
+#header{
+
+	background: #0b0b0b url(images/headerbg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#headerThanks{
+
+	background: #0b0b0b url(images/mission.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#mission{
+
+	background: #0b0b0b url(images/mission.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#packages, #getInTouch{
+
+	background: #0b0b0b url(images/texture.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* FLEX */
+
+#header, #mission, #packages, #getInTouch, #nav, #headerText, #packageGrid, #standardLogo, #premiumLogo, #albumArtwork, #tourPoster, #form, #headerThanks{
+
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+#header, #mission, #packages, #getInTouch, #headerText, #standardLogo, #premiumLogo, #albumArtwork, #tourPoster, #form, #headerThanks{
+
+	-webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav, #packageGrid{
+
+	-webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#headerText{
+
+	flex-grow: 2;
+
+}
+
+
+#header, #headerThanks{
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+#packages, #mission, #getInTouch{
+	height: 100%;
+	width: 100%;
+}
+
+#standardLogo, #premiumLogo, #albumArtwork, #tourPoster{
+
+	justify-content: space-around;
+
+}
+
+#standardLogo p, #premiumLogo p, #albumArtwork p, #tourPoster p{
+
+	max-width:280px;
+
+	}
+
+#packageGrid{
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 75%;
+
+}
+
+
+
+
+
+/* Heights & Widths///Sizing */
+
+#nav{
+	width: 90%;
+	justify-content: space-between;
+	align-items: center;
+	height: 20%;
+}
+
+#packLink{
+
+	margin-right: 64px;
+}
+
+#getInTouchLink{
+
+	padding-left: 155px;
+}
+
+.outlineButton{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    padding: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 3px;
+    -webkit-transition: border-color 0.5s, background-color 0.5s; /* Safari */
+    transition: border-color 0.5s, background-color 0.5s;
+
+
+}
+
+.outlineButton:hover {
+
+    border-color: #00a651;
+    background-color: #00a651;
+
+}
+
+.pack{
+
+	width:330px;
+	border-width: 3px;
+    border-style: solid;
+    border-color: #030303;
+    background-color: #030303;
+    height:340px;
+    margin-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#packagesSubtitle{
+
+	margin-top:39px;
+	line-height: 2em;
+}
+
+#mission h6{
+
+	margin-top: 45px;
+	line-height: 1.6em;
+	max-width:1150px;
+
+}
+
+#headerText h3{
+
+	max-width: 1000px;
+	line-height: 1.6em;
+
+}
+
+.pack h4{
+
+	line-height: 1.4em;
+	max-width:260px;
+}
+
+.pack p{
+
+	line-height:1.6em;
+}
+
+form{
+
+	display: block;
+}
+
+#submitButton{
+
+	width:465px;
+	height:43px;
+	background-color: #00a651;
+	border-radius: 3px;
+	border-color: #00a651;
+	border-style: solid;
+     -webkit-transition: border-color 0.5s, background-color 0.5s; /* Safari */
+    transition: border-color 0.5s, background-color 0.5s;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+
+    margin-top: 30px;
+
+}
+
+#submitButton:hover{
+
+background-color: #026130;
+border-color: #026130;
+
+	}
+
+/* Font Styles */
+
+.nav a{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+     -webkit-transition: color 0.5s;/* Safari */
+    transition: color 0.5s;
+}
+
+.nav a:hover{
+
+	
+    color: #00a651;
+ 
+}
+
+p a{
+    color: white;
+ 	text-decoration: none;
+ 	 -webkit-transition: color 0.5s;/* Safari */
+    transition: color 0.5s;
+
+}
+
+p a:hover{
+    color: #00a651;
+ 	text-decoration: none;
+}
+
+h1{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: -0.05em;
+    text-align: center;
+    font-style: italic;
+
+}
+
+h2{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.6em;
+    letter-spacing: -0.05em;
+    text-align: center;
+    font-style: italic;
+
+}
+
+h3{
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+h4{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: -0.025em;
+    text-align: center;
+    font-style: italic;
+
+}
+
+h5{
+
+	font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    letter-spacing: -0.05em;
+    text-align: center;
+    font-style: italic;
+
+}
+
+h6{
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+
+p{
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+
+label{
+	font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+/*Positioning*/
+
+#headerText h1{
+
+	margin-top: -150px;
+}
+
+#headerText h3{
+
+	margin: 37px auto;
+}
+
+#emailLabel, #regardingLabel, #messageLabel{
+
+margin-top: 21px;
+margin-bottom: 10px;
+
+}
+
+#nameLabel{
+
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+#artistName, #email, #message{
+
+	width: 430px;
+	padding-right:15px; 
+	padding-left:15px;
+}
+
+#regarding{
+
+	width:460px;
+	padding-right:15px; 
+	padding-left:15px;
+
+}
+
+#artistName, #email, #regarding{
+
+	height: 40px;
+}
+
+#message{
+
+	height:175px;
+	padding-top: 15px;
+}
+
+#packLinkMob, #missionLinkMob{
+
+	display:none;
+
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1850px) {
+
+
+	.pack{
+
+		height:260px;
+		margin-top:30px;
+	}
+
+	#packagesSubtitle{
+
+		margin-top:15px;
+
+	}
+
+}
+
+@media screen and (max-width:1000px) {
+
+	.pack{
+		height:180px;
+		width:260px;
+		margin-top:30px;
+	}
+
+
+
+	.pack img{
+
+		display:none;
+	}
+
+
+
+	h1{
+
+		font-size: 3em;
+	}
+
+
+
+	h3{
+
+		font-size: 0.95em;
+
+		width:90%;
+	}
+
+
+	h6{
+
+		width:90%;
+	}
+
+
+	#navleft{
+
+		order:2;
+	}
+
+
+	#headerLogo{
+
+		order:1;
+	}
+
+
+	#navright{
+
+		order:3;
+	}
+
+
+	#packLink, #missionLink{
+
+		display:none;
+	}
+
+
+
+	#getInTouchLink{
+
+		padding-left: 0px;
+	}
+
+
+	#packLinkMob, #missionLinkMob{
+
+	display:inline;
+
+	margin-right: 20px;
+
+	}
+
+
+}
+
+@media screen and (max-width:700px) {
+
+
+	.pack{
+		height:180px;
+		width:120px;
+		margin-top:15px;
+	}
+
+	.pack img{
+
+		display:none;
+	}
+
+	.pack h4{
+
+		font-size: 0.75em;
+	}
+
+
+	h2{
+
+		font-size: 1.6em;
+	}
+
+	p{
+
+		font-size:0.5em;
+	}
+
+	#artistName, #email, #message{
+
+	width: 270px;
+	padding-right:15px; 
+	padding-left:15px;
+	height:30px;
+}
+
+#regarding{
+
+	width:300px;
+	padding-right:15px; 
+	padding-left:15px;
+	height:30px;
+
+}
+
+#submitButton{
+
+	width:305px;
+	height:35px;
+
+}
+
+#headerText h1{
+
+	margin-top: 0px;
+}
+
+#headHighLogo{
+
+width: 75%;
+height: 75%;
+
+}
+
+
+}
+
+@media screen and (max-width:600px) {
+
+	#packLinkMob, #missionLinkMob{
+
+	display:inline;
+
+	margin-right: 5px;
+
+	}
+
+	#nav{
+
+			flex-direction: column;
+		}
+
+	#headerLogo{
+
+		margin-bottom: 15px;
+	}
+
+
+	h1{
+
+		font-size:2em;
+	}
+
+	h3{
+
+		font-size: 0.8em;
+	}
+
+	.nav a{
+
+			font-size: 0.7em;
+			margin-bottom: 55px;
+
+			margin-top: 25px;
+		}
+
+	#headerLogo{
+
+			margin-top: 15px;
+		}
+	}
+
+@media screen and (max-width:390px) {
+
+
+	.pack{
+		height:160px;
+		width:100px;
+		margin-top:10px;
+	}
+
+	p{
+
+		font-size:0.45em;
+	}
+
+	h1{
+
+		font-size:2em;
+	}
+
+	h3{
+
+		font-size: 0.8em;
+	}
+
+	.nav a{
+
+			font-size: 0.6em;
+			margin-bottom: 55px;
+
+			margin-top: 25px;
+		}
+}

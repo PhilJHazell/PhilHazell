@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HeadHigh | Graphic Design for Unsigned and Independent Bands</title>
+    <meta charset="UTF-8">
+  	<meta name="description" content="Graphic Design for Unsigned and Independent Bands/">
+  	<meta name="keywords" content="graphic design, music, logo, independent, band, artist, album artwork, gig poster">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,600i" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+  <body>
+
+<div id="fullpage">
+
+
+
+
+  <div class="section" data-anchor="firstPage" >
+
+    
+
+    <div id="header">
+
+    <div id="nav">
+
+        <div class="nav" id="navleft">
+          <a href="#secondPage" id="packLink"> PACKAGES </a>
+          <a href="#thirdPage" id="missionLink"> OUR MISSION </a>
+        </div>
+
+        <a href="#firstPage" id="headerLogo"><img src="images/logo.png" alternate="HeadHigh" id="headHighLogo"/></a>
+
+        <div class="nav" id="navright">
+           <a href="#secondPage" id="packLinkMob"> PACKAGES </a>
+          <a href="#thirdPage" id="missionLinkMob"> OUR MISSION </a>
+          <a href="#fourthPage" id="getInTouchLink"> GET IN TOUCH </a>
+        </div>
+
+      </div>
+
+      <div id="headerText">
+
+        <h1> STAND OUT</br> FROM THE CROWD </h1>
+        <h3>  Bespoke logo, Album Artwork &amp; Gig Poster design for unsigned &amp; independent bands/artists from as little as £20 </h3>
+        <a class="outlineButton" id="headerButton" href="#fourthPage">GET IN TOUCH</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="section" data-anchor="secondPage">
+  <div id="packages">
+
+    <h2> PACKAGES </h2>
+    <p id="packagesSubtitle">Affordable high quality identity design for unsigned &amp; independent bands/artists</br> Need a one off item or bespoke print? <a href="#fourthPage">Get in touch</a></p>
+
+    <div id="packageGrid">
+
+      <div class="pack" id="standardLogo">
+
+        <h4> Standard Logo Design </h4>
+        <img src="images/logopack.png" alt="Standard Music Logo Design"/>
+        <p>Logo Design provided in high quality .png format</p>
+        <h5>£20</h5>
+
+      </div>
+
+      <div class="pack" id="premiumLogo">
+
+        <h4>Premium Logo Design</h4>
+        <img src="images/logopack.png" alt="Premium Music Logo Design" />
+        <p>Logo Design in a pack of high quality, print ready vector formats</p>
+        <h5>£40</h5>
+
+      </div>
+
+      <div class="pack" id="albumArtwork">
+
+        <h4> Premium Logo &amp; Album Artwork Design</h4>
+        <img src="images/album.png" alt="Premium Music Logo and Album Artwork Design" />
+        <p>Logo Pack and print ready album artwork</p>
+        <h5>£145</h5>
+
+      </div>
+
+      <div class="pack" id="tourPoster">
+
+        <h4>Premium Logo, Album Artwork &amp; Gig Poster Design</h4>
+        <img src="images/poster.png" alt="Premium Music Logo, Album Artwork & Tour/Gig Poster Design"/>
+        <p>Logo Pack, album artwork &amp; print ready Gig/Tour poster design</p>
+        <h5>£285</h5>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  <div class="section" data-anchor="thirdPage">
+
+    <div id="mission">
+
+    <h2> Our Mission </h2>
+    <h6>To provide affordable, high quality graphic design to the thousands of talented unsigned &amp; independent artists who want to stand out from the crowd.</h6>
+
+    </div>
+
+  </div>
+
+
+  <div class="section" data-anchor="fourthPage">
+
+    <div id="getInTouch">
+
+    <h2> Get In Touch </h2>
+
+    <form class="form" id="form" method="post" name="enquiryForm" action="form-to-email.php">
+
+
+      <label for="artistName" id="nameLabel">Artist/Band Name</label>
+      <input type="text" id="artistName" name="name">
+
+      <label for="email" id="emailLabel">Email Address</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="regarding" id="regardingLabel">Regarding</label>
+      <select id="regarding" name="regarding">
+
+      <option value="standardLogo">Standard Logo Design </option>
+      <option value="premiumLogo">Premium Logo Design </option>
+      <option value="albumArtwork">Logo &amp; Album Artwork Design </option>
+      <option value="tourPoster">Logo, Album Artwork &amp; Tour Poster Design </option>
+      <option value="somethingElse">Something Else</option>
+
+      </select>
+
+      <label for="message" id="messageLabel">Message</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit" id="submitButton" value="sendform">Submit</button>
+
+    </form>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<script   src="http://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+</body>
+</html>
